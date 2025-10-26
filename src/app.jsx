@@ -31,7 +31,7 @@ export const App = () => {
 				<div className={styles.steps}>
 						<div className={styles["steps-content"]}>
 							{/* {activeStep && activeStep.content} */}
-							{steps.map((step, index) => index === activeIndex ? step.content : '')}
+							{steps[activeIndex].content}
 						</div>
 					<ul className={styles["steps-list"]}>
 						{steps.map((step, index) => (
